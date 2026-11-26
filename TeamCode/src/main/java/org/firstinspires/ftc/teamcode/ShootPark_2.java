@@ -36,6 +36,7 @@ public class ShootPark_2 extends LinearOpMode {
     public Command autoRoutine() {
         return sequential(
                 follow(follower, shoot()),
+                waitMs(5000),
                 follow(follower, park())
         );
     }
